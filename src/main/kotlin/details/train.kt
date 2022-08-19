@@ -9,43 +9,6 @@ import kotlin.concurrent.thread
 data class train(val train_id:Int,val train_number:Int, val train_name:String, val source:String, val destination:String, val start_date_time:String, val arrival_time:String)
 
 
-
-
-//fun inserttrain(){
-//    print("\nEnter Data\nName : ")
-//    val train_name = sc.next()
-//    print("Age : ")
-//    val passenger_age = sc.nextInt()
-//    print("Gender (M/F) : ")
-//    val gender = sc.next();
-//    print("Contact Number : ")
-//    val phone = sc.next()
-//    val pstmt = connection.prepareStatement("Insert into passengers(passenger_name,passenger_age,gender,phone) values(?,?,?,?)")
-//    pstmt.setString(1,passenger_name)
-//    pstmt.setInt(2,passenger_age)
-//    pstmt.setString(3,gender)
-//    pstmt.setString(4,phone)
-//    pstmt.executeUpdate()
-//
-//
-//}
-//fun deletetrain(){
-//
-//}
-//fun showalltrain() {
-//    val query1 = connection.prepareStatement("select * from train")
-//    val result1 = query1.executeQuery()
-//    while (result1.next()) {
-//        val id = result1.getInt("passenger_id")
-//        val name = result1.getString("passenger_name")
-//        val age = result1.getInt("passenger_age")
-//        val gender = result1.getString("gender")
-//        val phone = result1.getString("phone")
-//        println("---------------------------\nId : $id\nName : $name\nAge : $age\nGender : $gender\nContact Number : $phone\n---------------------------")
-//
-//    }
-//    Thread.sleep(4000)
-//}
 fun showalldatatrain(){
     val query1 = connection.prepareStatement("select * from train")
     val result1 = query1.executeQuery()
